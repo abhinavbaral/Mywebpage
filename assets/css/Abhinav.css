@@ -12322,25 +12322,36 @@ pre .code {
 }
 
 .social-icons {
-  list-style-type: none;
-  padding-left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  list-style: none;
+  padding: 0;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  max-width: 180px;
+  gap: 10px; /* Adjust spacing between icons */
 }
 
-.social-icons .social-link {
-  font-size: 18px;
+.social-item {
+  display: inline-block;
 }
 
-.social-icons .social-link:hover {
-  color: #F85C70;
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: royalblue; 
+  color: #fff;
+}
+
+.social-link i {
+  font-size: 20px; 
 }
 
 .navbar {
